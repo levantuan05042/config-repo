@@ -1,13 +1,9 @@
 server:
-  port: 8888
+  port: 8080
 
 spring:
   application:
-    name: config-server
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/levantuan05042/config-repo
-          default-label: main
- 
+    name: common-config
+logging:
+  level:
+    root: INFO

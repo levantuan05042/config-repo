@@ -1,0 +1,6 @@
+message: "Hello from Service 1 Config"
+database:
+  url: jdbc:mysql://localhost:3306/service1_db
+  username: root
+  password: secret
+

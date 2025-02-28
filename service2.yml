@@ -1,0 +1,5 @@
+message: "Hello from Service 2 Config"
+database:
+  url: jdbc:mysql://localhost:3306/service2_db
+  username: admin
+  password: secret123
