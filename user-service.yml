@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-service
+
+message: Hello from user-service config
