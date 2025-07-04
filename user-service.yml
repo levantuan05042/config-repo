@@ -1,5 +1,17 @@
+server:
+  port: 9001
+
 spring:
   application:
     name: user-service
 
-message: Hello from user-service config
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: root
+    password: 123456
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
