@@ -1,20 +1,14 @@
-server:
-  port: 8081
-
 spring:
-  application:
-    name: user-service
-
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:xe   # Thay th? theo c?u h�nh Oracle c?a b?n
-    username: system             # VD: system ho?c user b?n t?o
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
     password: 123456
     driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
     hibernate:
-      ddl-auto: update         # t?o/s?a b?ng t? ??ng
-    show-sql: true             # log SQL ra console
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
