@@ -1,24 +1,25 @@
 server:
-  port: 9001
+  port: 8081
 
 spring:
   application:
     name: user-service
 
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:XE
-    username: system
+    url: jdbc:oracle:thin:@localhost:1521:xe   # Thay th? theo c?u h�nh Oracle c?a b?n
+    username: system             # VD: system ho?c user b?n t?o
     password: 123456
     driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: update         # t?o/s?a b?ng t? ??ng
+    show-sql: true             # log SQL ra console
     properties:
-      hibernate.dialect: org.hibernate.dialect.OracleDialect
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: false
+    fetch-registry: false
