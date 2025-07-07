@@ -13,9 +13,9 @@ spring:
           predicates:
             - Path=/api/users/**
         - id: message-service
-          uri: lb://MESSAGE-SERVICE
+          uri: lb://CHAT-SERVICE
           predicates:
-            - Path=/api/messages/**
+            - Path=/api/chat/**
         - id: auth-service
           uri: lb://AUTH-SERVICE
           predicates:
