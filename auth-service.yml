@@ -1,7 +1,8 @@
 server:
   port: 8081
-
 spring:
+  application:
+    name: auth-service
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:xe
     username: system
